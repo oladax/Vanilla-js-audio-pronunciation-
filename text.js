@@ -17,7 +17,7 @@ img.onclick = () => {
     var speech = new SpeechSynthesisUtterance();
 
     // defing speech properties
-    speech.lang =  "en-NG";
+    speech.lang =  "en-US";
     speech.text = `${result}`;
     speech.volume = 30;
     speech.pitch = 1;
