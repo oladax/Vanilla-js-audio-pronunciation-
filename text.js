@@ -14,15 +14,14 @@ img.onclick = () => {
     const textarea = document.getElementById('text')
     let word = textarea.value
     let result = word.toLowerCase();
-    const wor = 'djpdmmdiidiid'
     var speech = new SpeechSynthesisUtterance();
 
     // defing speech properties
     speech.lang =  "en-NG";
-    speech.text = `${result}` + `${wor}`;
+    speech.text = `${result}`;
     speech.volume = 30;
     speech.pitch = 1;
-    speech.rate = 0;
+    speech.rate = 1;
 
 
     window.speechSynthesis.speak(speech)
